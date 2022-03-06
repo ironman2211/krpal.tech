@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <Navigation>
       <Logo>
-        <img src="/images/krapal.png"></img>
+        <img src="/images/krapal.png" alt="logo"></img>
       </Logo>
       <Description>
         <Title>K R P A L</Title>
