@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const Navigation = styled.div`
@@ -7,14 +8,16 @@ const Navigation = styled.div`
   color: white;
   display: flex;
   align-items: center;
-  gap:10px;
+  gap: 10px;
   justify-content: flex-start;
   padding: 0px 10px;
+  position: relative;
 `;
 const Logo = styled.div`
+  cursor: pointer;
   height: 45px;
   width: 54px;
-  margin-top:2px;
+  margin-top: 2px;
   img {
     height: 100%;
     width: 100%;
@@ -23,23 +26,26 @@ const Logo = styled.div`
 const Description = styled.div`
   display: flex;
   flex-direction: column;
-  font-weight:900;
-  margin-bottom:2px;
+  font-weight: 900;
+  margin-bottom: 2px;
 `;
-const Title =styled.span`
-  font-size:30px;
-  letter-spacing:2px;
-`
-const Subtitle =styled.span`
-font-size:10px;
-letter-spacing:1px;
-`
+const Title = styled.span`
+  font-size: 30px;
+  letter-spacing: 2px;
+`;
+const Subtitle = styled.span`
+  font-size: 10px;
+  letter-spacing: 1px;
+`;
+
 const Header = () => {
+  const Navigate = useNavigate();
   return (
     <Navigation>
-      <Logo>
+      <Logo onClick={() => Navigate("/")}>
         <img src="/images/krapal.png" alt="logo"></img>
       </Logo>
+
       <Description>
         <Title>K R P A L</Title>
         <Subtitle>WHERE YOU'RE IN CONTROL</Subtitle>
