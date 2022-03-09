@@ -1,15 +1,14 @@
 import Header from "./components/Header.js";
 import Homepage from "./components/homepage.js";
 import Login from "./components/login.js";
-import Signup from "./components/Signin.js";
+import Signup from "./components/signUp.js";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="app">
-     
-
       <Header></Header>
 
       <Routes>

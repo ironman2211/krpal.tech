@@ -5,7 +5,7 @@ import InputForm from "./input/inputfield.js";
 const Container = styled.div`
   background-image: linear-gradient(to bottom right, #7903ab, #cf39cb);
   width: 60vw;
-  height: 67vh;
+  height: 65vh;
   margin: auto;
   margin-top: 50px;
   border-radius: 50px;
@@ -84,7 +84,7 @@ const Login = () => {
           handleChange={handleChange}
         />
         <p>
-          Dont have an acoount ? <Link to="/signup"  style={{ color: '#FB0000' , textDecoration:'none'}} >signup</Link>
+          Dont have an account ? <Link to="/signup"  style={{ color: '#FB0000' , textDecoration:'none'}} >signup</Link>
         </p>
         <Button>LOG IN</Button>
       </form>

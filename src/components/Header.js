@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const Navigation = styled.div`
+  cursor: pointer;
   height: 10vh;
   width: 100vw;
   background-color: black;
@@ -14,7 +15,6 @@ const Navigation = styled.div`
   position: relative;
 `;
 const Logo = styled.div`
-  cursor: pointer;
   height: 45px;
   width: 54px;
   margin-top: 2px;
@@ -41,8 +41,8 @@ const Subtitle = styled.span`
 const Header = () => {
   const Navigate = useNavigate();
   return (
-    <Navigation>
-      <Logo onClick={() => Navigate("/")}>
+    <Navigation onClick={() => Navigate("/")}>
+      <Logo>
         <img src="/images/krapal.png" alt="logo"></img>
       </Logo>
 
