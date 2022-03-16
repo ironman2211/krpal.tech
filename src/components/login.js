@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import InputForm from "./input/inputfield.js";
 const Container = styled.div`
+position:absolute;
   background-image: linear-gradient(to bottom right, #7903ab, #cf39cb);
   width: 60vw;
   height: 65vh;
+  top:100px;
+  left:0;
+  right:0;
   margin: auto;
   margin-top: 50px;
   border-radius: 50px;
@@ -39,6 +43,7 @@ const Container = styled.div`
   }
 `;
 const Button = styled.button`
+margin:auto;
   height: 53px;
   width: 200px;
   background-color:#B300FF;
@@ -47,6 +52,13 @@ const Button = styled.button`
   color: #FFFFFF;
   font-size:20px;
   font-weight:bold;
+  &:hover {
+    border:#B300FF 2px solid;
+    color: #B300FF;
+    background-color:#ffffff;
+    
+  }
+
 `;
 const Login = () => {
   const [userCredentials, setUserCredentials] = useState({

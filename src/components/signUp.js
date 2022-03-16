@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import InputForm from "./input/inputfield.js";
 const Container = styled.div`
+position:absolute;
+top:70px;
+left:0;
+right:0;
   background-image: linear-gradient(to bottom right, #7903ab, #cf39cb);
   width: 70vw;
   height: 88h;
@@ -46,6 +50,12 @@ const Button = styled.button`
   color: #ffffff;
   font-size: 20px;
   font-weight: bold;
+  &:hover {
+    border:#B300FF 2px solid;
+    color: #B300FF;
+    background-color:#ffffff;
+    
+  }
 `;
 
 const Login = () => {
