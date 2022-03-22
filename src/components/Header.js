@@ -12,7 +12,10 @@ const Navigation = styled.div`
   gap: 10px;
   justify-content: flex-start;
   padding: 0px 10px;
-  position: relative;
+  position: absolute;
+  top:0px;
+  left:0px;
+  background:transparent;
 `;
 const Logo = styled.div`
   height: 45px;

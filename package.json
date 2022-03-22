@@ -11,9 +11,15 @@
     "react-ripples": "^2.2.1",
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
+    "react-simple-typewriter": "^3.0.1",
     "react-type-animation": "^1.1.2",
+    "react-typed": "^1.2.0",
+    "react-typing-animation": "^1.6.2",
+    "react-typing-effect": "^2.0.5",
+    "react-typist": "^2.0.5",
     "sass": "^1.49.9",
     "styled-components": "^5.3.3",
+    "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
