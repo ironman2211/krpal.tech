@@ -1,37 +1,51 @@
-import React from "react";
-import "./Signin.css";
-import { Link } from "react-router-dom";
+import React from 'react';
+import "./Signin.css"
+import { motion } from "framer-motion"
+import { Link } from 'react-router-dom';
 
-const SignIn = () => {
-  return (
-    <div className="SignIn__main">
-      <div className="SignIn__middleCont">
-        <h2>Sign in</h2>
+import lava1 from "../../assets/lava1.jpg"
 
-        <form className="SignIn__form">
-          <input
-            type="text"
-            className="SignIn__neumorphicInput"
-            placeholder="Username"
-          />
-          <input
-            type="password"
-            className="SignIn__neumorphicInput"
-            placeholder="Password"
-          />
-        </form>
+export default function SignIn() {
 
-        <button className="SignIn__gradientBtn">Proceed</button>
+  const variants = {
+    in: { opacity: 1, x: "0%" },
+    out: { opacity: 0,x: "100%" },
+  }
+  
+  
+    return (
+      <motion.div
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={variants}
+      transition={{ duration: 0.9}}
+    >
+        <div className="SignIn__main">
 
-        <p className="SignIn__grayText">
-          New to Krpal?{" "}
-          <Link className="SignIn__link" to="/signup">
-            Create your account
-          </Link>
-        </p>
-      </div>
-    </div>
-  );
-};
+            <div className="SignIn__card">
 
-export default SignIn;
+                <div className="SignIn__leftCont">
+                    <h2>Sign In</h2>
+
+
+                    <form className="SignIn__form">
+                        <input type="text" className="SignIn__neumorphicInput" placeholder="Username" />
+                        <input type="password" className="SignIn__neumorphicInput" placeholder="Password" />
+                    </form>
+
+                    <button className="SignIn__gradientBtn">Proceed</button>
+
+                    <p className="SignIn__grayText">New to Krpal? <Link className="SignIn__link" to="/signup">Create your account</Link></p>
+                </div>
+
+
+                <div className="SignIn__rightCont"
+                    style={{ backgroundImage: "url('" + lava1 + "')" }}>
+                </div>
+
+            </div >
+        </div >
+      </motion.div>
+    )
+}
