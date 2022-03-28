@@ -236,7 +236,7 @@ const Homepage = () => {
           </div>
           <div>To next level</div>
           <Start onClick={() => navigate("/signin")}>
-            Get Started <img src="./images/arrow.svg" className="arrow" />
+            Get Started <img src="./images/arrow.svg" alt="arrow" className="arrow" />
           </Start>
         </Discover>
       </Container>
