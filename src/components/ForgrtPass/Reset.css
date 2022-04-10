@@ -1,14 +1,16 @@
-.SignIn__main {
+.Reset__main {
   height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 30px;
+
   box-sizing: border-box;
   transition: all 0.2s ease-in;
 }
-.SignIn__main > .SignIn__card {
+.Reset__main > .Reset__card {
   height: 100%;
   width: 85%;
 
@@ -16,13 +18,14 @@
   justify-content: space-between;
   align-items: center;
 }
-.SignIn__main > .SignIn__card > .SignIn__leftCont {
+.Reset__main > .Reset__card > .Reset__leftCont {
   border-radius: 32px 0px 0px 32px;
   box-sizing: border-box;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
   align-items: center;
   width: 65%;
   height: 100%;
@@ -32,19 +35,12 @@
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
 }
-.SignIn__main > .SignIn__card > .SignIn__leftCont > h2 {
-  font-size: 45px;
+.Reset__main > .Reset__card > .Reset__leftCont > h2 {
+  font-size: 40px;
   text-shadow: 0 0 10px rgb(200 212 255 / 69%), 0 0 10px rgb(200 212 255 / 25%);
 }
-.SignIn__main > .SignIn__card > .SignIn__leftCont > .SignIn__connectWallet {
-  margin: 10px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.SignIn__main > .SignIn__card > .SignIn__leftCont > .SignIn__form {
+
+.Reset__main > .Reset__card > .Reset__leftCont > .Reset__form {
   margin: 22px 0px;
   width: 90%;
   display: flex;
@@ -55,7 +51,7 @@
 /* -------------------------------------------------------------------------------- */
 
 /* Right container */
-.SignIn__main > .SignIn__card > .SignIn__rightCont {
+.Reset__main > .Reset__card > .Reset__rightCont {
   border-radius: 0px 32px 32px 0px;
   box-sizing: border-box;
   transition: all 0.3s ease;
@@ -69,9 +65,9 @@
   background-size: cover;
 }
 
-.SignIn__main .SignIn__gradientBtn {
+.Reset__main .Reset__gradientBtn {
   font-size: 23px;
-  margin: 7px 0px;
+  margin: 0px 0px;
   padding: 7px 32px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -84,12 +80,12 @@
   box-shadow: 2px 3px 10px rgb(0, 0, 0),
     -0.5px -1.5px 6px rgba(97, 102, 107, 0.5);
 }
-.SignIn__main .SignIn__gradientBtn:hover {
+.Reset__main .Reset__gradientBtn:hover {
   box-shadow: inset 2px 3px 10px rgb(0, 0, 0),
     inset -0.5px -1.5px 6px rgba(97, 102, 107, 0.5);
 }
 
-.SignIn__main .SignIn__neumorphicInput {
+.Reset__main .Reset__neumorphicInput {
   color: white;
   font-size: 20px;
   font-weight: 300;
@@ -108,28 +104,22 @@
     inset -0.5px -1.5px 6px rgba(97, 102, 107, 0.5);
 }
 
-.SignIn__main .SignIn__grayText {
-  margin-top: 25px;
-  color: #d0cdcd;
-  font-size: 20px;
-  text-align: center;
+.Reset__main .Reset__grayText {
+  margin-top: 20px;
+  color: #3d3d3d;
+  font-size: 15px;
 }
-
-/* .SignIn__main.SignIn__link {
-  color: #ff1111;
+.Reset__main.Reset__link {
+  color: #464646;
   font-size: 15px;
   font-size: 15px;
   font-weight: 500;
-text-decoration: none;
-  background: linear-gradient(to right, rgb(0, 128, 255), rgb(0, 255, 34));
+
+  background: linear-gradient(to right, rgb(0, 128, 255), rgb(177, 162, 204));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-} */
-
-.SignIn__main .SignIn__flexRowBetween > .SignIn__neumorphicInput {
-  width: 49%;
 }
-.SignIn__link{
- color: rgb(255, 255, 255) ;
-  text-decoration: underline;
+
+.Reset__main .Reset__flexRowBetween > .Reset__neumorphicInput {
+  width: 49%;
 }

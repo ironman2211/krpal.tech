@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 import { Link } from "react-router-dom";
@@ -29,9 +29,14 @@ const Subtitle = styled.span`
   font-size: 8px;
   letter-spacing: 1px;
 `;
+const LOGOCONT=styled.div`
+display:flex;
+
+cursor:pointer;
+`
 export default function Header() {
   const [hamburgerOpen, setHamburgerOpen] = React.useState(false);
-
+  const navigate=useNavigate();
   return (
     <header className="Header__main">
       <div className="Header__left">
@@ -45,16 +50,18 @@ export default function Header() {
           <span></span>
           <span></span>
         </div>
-        <>
-          <Logo>
+        < LOGOCONT onClick={()=>navigate('/')}>
+          <Logo >
             <img src="/images/krapal.png" alt="logo"></img>
           </Logo>
 
           <Description>
+          
             <Title>K R P A L</Title>
             <Subtitle>WHERE YOU'RE IN CONTROL</Subtitle>
+            
           </Description>
-        </>
+        </LOGOCONT>
         <ul className="Header__navList">
           <li>
             <Link to="/scout">Scout</Link>

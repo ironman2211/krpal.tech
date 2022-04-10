@@ -1,6 +1,7 @@
 import Homepage from "./components/homepage/homepage.js";
 import Login from "./components/signIn/Signin.js";
 import Signup from "./components/signup/signUp.js";
+import Reset from "./components/ForgrtPass/Reset";
 import Scout from "./components/Scout/Scout.js"
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
@@ -15,7 +16,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/signin" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        
+        <Route path="/Reset" element={<Reset />} />
         <Route path="/scout" element={<Scout />} />
       </Routes>
       </AnimatePresence>
