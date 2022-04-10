@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Reset.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -18,18 +18,21 @@ const Reset = () => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
-  // const { email } = formValues;
+  const { email } = formValues;
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
+    handleAction(email)
   };
-
-  useEffect(() => {
+  const handleAction=(email)=>{
+    
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       //do rdux action hear
+      console.log(email)
     }
-  }, [formErrors]);
+  }
+
   const validate = (values) => {
     const errors = {};
 
