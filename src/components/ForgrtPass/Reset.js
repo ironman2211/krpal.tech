@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Reset.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { emailResetStart } from "../../redux/user/user-action";
 import lava1 from "../../assets/lava1.jpg";
 const Reset = () => {
   const variants = {
@@ -19,7 +18,7 @@ const Reset = () => {
     const { name, value } = e.target;
     setFormValues({ ...formValues, [name]: value });
   };
-  const { email } = formValues;
+  // const { email } = formValues;
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
@@ -28,7 +27,7 @@ const Reset = () => {
 
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(email);
+      //do rdux action hear
     }
   }, [formErrors]);
   const validate = (values) => {
